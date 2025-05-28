@@ -124,7 +124,7 @@ public class HotelReservationSystem {
             System.out.print("Enter reservation ID: ");
             int reservationId = scanner.nextInt();
             System.out.print("Enter guest name: ");
-            String guestName = scanner.nextLine();
+            String guestName = scanner.next();
 
             String sql = "SELECT room_number FROM reservations " +
                     "WHERE reservation_id = " + reservationId +
